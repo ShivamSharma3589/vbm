@@ -1,0 +1,16 @@
+.topbar-wrapper {
+  background-color: #000;
+  color: #fff;
+}
+
+.topbar-wrapper .topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.topbar-wrapper ul {
+  list-style: none;
+  display: flex;
+}

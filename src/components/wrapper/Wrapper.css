@@ -1,0 +1,6 @@
+.main-wrapper {
+    max-width: 600px;
+    margin: auto;
+    background-color: #eee;
+    min-height: 100vh;
+}
