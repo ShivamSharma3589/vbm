@@ -4,14 +4,17 @@
 
 import React from "react";
 import { BottomNav, TopBar, Wrapper } from "../components";
+import "./AppLayout.css";
 
 const AppLayout = ({ children }) => {
   return (
-    <Wrapper>
-      <TopBar />
-      {children}
-      <BottomNav />
-    </Wrapper>
+    <div className="app-layout-wrapper">
+      <Wrapper>
+        <TopBar />
+        {children}
+        <BottomNav />
+      </Wrapper>
+    </div>
   );
 };
 

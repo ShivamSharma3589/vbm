@@ -1,0 +1,45 @@
+.products-grid-wrapper {
+  padding: 0 5px;
+}
+.products-grid-wrapper .grid-card .ant-card-body {
+  padding: 5px;
+}
+
+.products-grid-wrapper .image-area {
+  position: relative;
+  width: 100%;
+  padding-top: 150%;
+}
+
+.products-grid-wrapper .img-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.products-grid-wrapper .product-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* DESCRIPTION AREA */
+
+.products-grid-wrapper .desc-area .title {
+  font-size: 14px;
+  line-height: 18px;
+  height: 58px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 5px;
+}
+
+.products-grid-wrapper .desc-area .price {
+  font-size: 18px;
+  font-weight: 600;
+  color: green;
+}

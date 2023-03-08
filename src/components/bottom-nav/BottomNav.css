@@ -1,0 +1,10 @@
+.bottomNav-wrapper {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.bottomNav-wrapper .css-imwso6-MuiBottomNavigationAction-label.Mui-selected {
+  font-size: 12px;
+}
