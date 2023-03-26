@@ -1,5 +1,7 @@
 /**
  * NAVIGATION COMPONENT FILE
+ * @author: shivayasharma1149@gmail.com
+ * @date : 26-03-2023
  */
 
 import React from "react";
@@ -20,7 +22,7 @@ const Navigation = () => {
             </Suspense>
           }
         />
-        <Route path="*" element={<Navigate />} />
+        <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </Suspense>
   );

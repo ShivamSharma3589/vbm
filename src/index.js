@@ -5,7 +5,7 @@ import App from "./App";
 import "./index.css";
 import "bootstrap/dist/css/bootstrap.css";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+const root = ReactDOM.createRoot(document.getElementById("vivek-box-maker"));
 root.render(
   <React.StrictMode>
     <App />
