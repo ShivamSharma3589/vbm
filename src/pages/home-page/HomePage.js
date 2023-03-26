@@ -17,7 +17,7 @@ import {
 const HomePage = () => {
   return (
     <div className="homepage-wrapper">
-      {home.elements?.map((item, index) => {
+      {home.elements?.map((item) => {
         // eslint-disable-next-line default-case
         switch (item.type) {
           case BANNER:
@@ -30,6 +30,8 @@ const HomePage = () => {
             return <div>Product Grid</div>;
           case VERTICAL_PRODUCTS:
             return <div>Vertical Product</div>;
+          default:
+            return null;
         }
       })}
       <Banner />
