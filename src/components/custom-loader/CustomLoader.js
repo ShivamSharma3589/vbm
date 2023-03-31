@@ -8,7 +8,7 @@ import "./CustomLoader.css";
 const CustomLoader = () => {
   return (
     <div className="custom-loader">
-      <div class="spinner">
+      <div className="spinner">
         <div></div>
         <div></div>
         <div></div>
