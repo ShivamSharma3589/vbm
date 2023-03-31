@@ -18,7 +18,10 @@ const AppLayout = ({ children }) => {
         // Rendering header on the basis of the client device width
         isMobile ? <TopBar /> : <Header />
       }
-      {children}
+      {
+        // Main content will render here
+        children
+      }
       {
         // Rendering bottom navigation on the basis of the window size
         isMobile && <BottomNav />

@@ -27,7 +27,7 @@ const HomePage = () => {
           case HORIZONTAL_PRODUCTS:
             return <div>Horizontal Products</div>;
           case PRODUCT_GRID:
-            return <div>Product Grid</div>;
+            return <ProductGrid />;
           case VERTICAL_PRODUCTS:
             return <div>Vertical Product</div>;
           default:

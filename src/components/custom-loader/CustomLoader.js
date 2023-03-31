@@ -3,13 +3,19 @@
  */
 
 import React from "react";
-import { Spin } from "antd";
 import "./CustomLoader.css";
 
 const CustomLoader = () => {
   return (
     <div className="custom-loader">
-      <Spin size="large" />
+      <div class="spinner">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
     </div>
   );
 };
