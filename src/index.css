@@ -26,4 +26,24 @@ body {
   color: #ff0303;
   line-height: 0px !important;
 }
+
 /* WEBSITE LOGO ENDS */
+
+/* SECTION HEADING STARTS  */
+h4.section-heading {
+  font-size: 20px;
+  text-align: center;
+  padding: 10px 5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+/* SECTION HEADING ENDS  */
+
+/* SECTION SPACING STARTS  */
+section.section {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+/* SECTION SPACING ENDS  */

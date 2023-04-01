@@ -14,7 +14,6 @@ const AppCarousel = ({data}) => {
     <div className="app-carousel-wrapper">
       <Carousel>
         {data?.map((item) => {
-          console.log(item);
           return (
             <Carousel.Item key={item.id}>
               <LazyLoadImage

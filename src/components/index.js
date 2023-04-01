@@ -5,9 +5,11 @@ import BottomNav from "./bottom-nav/BottomNav";
 import ProductGrid from "./product-grid/ProductGrid";
 import Header from "./header/Header";
 import AppCarousel from "./app-carousel/AppCarousel";
+import AppCategoryCarousel from "./app-category-carousel/AppCategoryCarousel";
 
 export {
   AppCarousel,
+  AppCategoryCarousel,
   TopBar,
   PromoList,
   Banner,

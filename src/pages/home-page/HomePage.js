@@ -13,6 +13,7 @@ import {
   PRODUCT_GRID,
   VERTICAL_PRODUCTS,
 } from "../../constants"; // constant keys
+import AppCategoryCarousel from "../../components/app-category-carousel/AppCategoryCarousel";
 
 const HomePage = () => {
   return (
@@ -21,9 +22,21 @@ const HomePage = () => {
         // eslint-disable-next-line default-case
         switch (item.type) {
           case BANNER:
-            return <AppCarousel key={index} data={item.data} />;
+            return (
+              <section key={index}>
+                <AppCarousel data={item.data} />
+              </section>
+            );
           case CATEGORY:
-            return <div key={index}>Category</div>;
+            return (
+              <section key={index} className="section">
+                <AppCategoryCarousel
+                  data={item.data}
+                  heading={item.heading}
+                  showText={item.showText}
+                />
+              </section>
+            );
           case HORIZONTAL_PRODUCTS:
             return <div key={index}>Horizontal Products</div>;
           case PRODUCT_GRID:
@@ -34,7 +47,7 @@ const HomePage = () => {
             return null;
         }
       })}
-      
+
       <Banner />
       <Divider className="mb-2 mt-0" />
       <PromoList />
