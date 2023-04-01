@@ -14,6 +14,7 @@ import {
   VERTICAL_PRODUCTS,
 } from "../../constants"; // constant keys
 import AppCategoryCarousel from "../../components/app-category-carousel/AppCategoryCarousel";
+import AppProductsGrid from "../../components/app-products-grid/AppProductsGrid";
 
 const HomePage = () => {
   return (
@@ -37,9 +38,17 @@ const HomePage = () => {
                 />
               </section>
             );
-          case HORIZONTAL_PRODUCTS:
-            return <div key={index}>Horizontal Products</div>;
           case PRODUCT_GRID:
+            return (
+              <section key={index} className="section">
+                <AppProductsGrid
+                  data={item.data}
+                  heading={item.heading}
+                  showText={item.showText}
+                />
+              </section>
+            );
+          case HORIZONTAL_PRODUCTS:
             return <ProductGrid key={index} />;
           case VERTICAL_PRODUCTS:
             return <div key={index}>Vertical Product</div>;
