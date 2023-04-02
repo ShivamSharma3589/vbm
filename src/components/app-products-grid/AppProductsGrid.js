@@ -13,12 +13,19 @@ const AppProductsGrid = ({ data, heading, showText }) => {
   return (
     <div className="app-products-grid-wrapper">
       {heading.length > 0 && <h4 className="section-heading">{heading}</h4>}
-      <Row gutter={[5,5]}>
+      <Row gutter={[10, 10]} className="w-100">
         {data.map((item) => {
           return (
-            <Col key={item.id} xs={12} sm={12} md={8} lg={8} xl={6}>
-              <Card size="small">
+            <Col key={item.id} xs={12} sm={12} md={8} lg={6} xl={4}>
+              <Card size="small" className="product-card">
                 <div className="img-area">
+                  <LazyLoadImage
+                    src={item.src}
+                    alt={item.alt}
+                    title={item.title}
+                    className="bg-img"
+                  />
+                  <div className="blur-effect"></div>
                   <LazyLoadImage
                     src={item.src}
                     alt={item.alt}
@@ -29,7 +36,7 @@ const AppProductsGrid = ({ data, heading, showText }) => {
                 {showText && (
                   <div className="content-area">
                     <h6 className="title">{item.title}</h6>
-                    <div className="price">{item.price}</div>
+                    <div className="price">{item.price}/piece</div>
                   </div>
                 )}
               </Card>
