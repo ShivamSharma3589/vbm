@@ -13,7 +13,7 @@ const AppProductsGrid = ({ data, heading, showText }) => {
   return (
     <div className="app-products-grid-wrapper">
       {heading.length > 0 && <h4 className="section-heading">{heading}</h4>}
-      <Row gutter={[1,1]}>
+      <Row gutter={[5,5]}>
         {data.map((item) => {
           return (
             <Col key={item.id} xs={12} sm={12} md={8} lg={8} xl={6}>

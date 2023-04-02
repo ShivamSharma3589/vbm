@@ -3,9 +3,6 @@
  */
 
 import React from "react";
-import { Divider } from "antd";
-import { home } from "../../data"; // API data is being called
-import { Banner, ProductGrid, PromoList, AppCarousel } from "../../components"; // Page components
 import {
   BANNER,
   CATEGORY,
@@ -13,8 +10,12 @@ import {
   PRODUCT_GRID,
   VERTICAL_PRODUCTS,
 } from "../../constants"; // constant keys
-import AppCategoryCarousel from "../../components/app-category-carousel/AppCategoryCarousel";
-import AppProductsGrid from "../../components/app-products-grid/AppProductsGrid";
+import {
+  AppCarousel,
+  AppCategoryCarousel,
+  AppProductsGrid,
+} from "../../components"; // Page components
+import { home } from "../../data"; // API data is being called
 
 const HomePage = () => {
   return (
@@ -49,19 +50,13 @@ const HomePage = () => {
               </section>
             );
           case HORIZONTAL_PRODUCTS:
-            return <ProductGrid key={index} />;
+            return <div key={index}>Vertical Product</div>;
           case VERTICAL_PRODUCTS:
             return <div key={index}>Vertical Product</div>;
           default:
             return null;
         }
       })}
-
-      <Banner />
-      <Divider className="mb-2 mt-0" />
-      <PromoList />
-      <Divider className="my-2" />
-      <ProductGrid />
     </div>
   );
 };
