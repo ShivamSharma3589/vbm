@@ -3,17 +3,31 @@
  */
 
 import React from "react";
-import { BottomNav, TopBar, Wrapper } from "../components";
+import { BottomNav, Header, TopBar } from "../components";
+import useMobileDevice from "../hooks/useMobileDevice";
 import "./AppLayout.css";
 
 const AppLayout = ({ children }) => {
+  //#region for states
+  const { isMobile } = useMobileDevice();
+  //#endregion
+
   return (
     <div className="app-layout-wrapper">
-      <Wrapper>
-        <TopBar />
-        {children}
-        <BottomNav />
-      </Wrapper>
+      {
+        // Rendering header on the basis of the client device width
+        isMobile ? <TopBar /> : <Header />
+      }
+      <main className="main-content">
+      {
+        // Main content will render here
+        children
+      }
+      </main>
+      {
+        // Rendering bottom navigation on the basis of the window size
+        isMobile && <BottomNav />
+      }
     </div>
   );
 };

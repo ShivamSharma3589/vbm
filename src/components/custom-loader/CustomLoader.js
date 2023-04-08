@@ -3,9 +3,21 @@
  */
 
 import React from "react";
+import "./CustomLoader.css";
 
 const CustomLoader = () => {
-  return <div>CustomLoader</div>;
+  return (
+    <div className="custom-loader">
+      <div className="spinner">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  );
 };
 
 export default CustomLoader;

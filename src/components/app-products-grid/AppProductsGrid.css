@@ -1,0 +1,63 @@
+.app-products-grid-wrapper .product-card {
+  cursor: pointer;
+  height: 100%;
+}
+
+.app-products-grid-wrapper .img-area {
+  position: relative;
+  width: 100%;
+  padding-top: 125%;
+}
+
+.app-products-grid-wrapper .img-area .bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+}
+
+.app-products-grid-wrapper .img-area .blur-effect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(2px);
+}
+
+.app-products-grid-wrapper .img-area .img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.app-products-grid-wrapper .content-area {
+  padding-bottom: 35px;
+  padding-top: 5px;
+}
+
+.app-products-grid-wrapper .content-area .title {
+  margin-bottom: 5px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.app-products-grid-wrapper .content-area .price {
+  color: green;
+  font-weight: 500;
+  font-size: 18px;
+  position: absolute;
+  bottom: 0;
+  padding: 5px 0;
+}

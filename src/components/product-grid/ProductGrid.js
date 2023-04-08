@@ -25,7 +25,7 @@ const ProductGrid = () => {
                   </div>
                 </div>
                 <div className="desc-area">
-                  <h6 className="title">{item.title}ghfdb hgvfuy uyhgrfbb bvsunb uyhfbpyqfj</h6>
+                  <h6 className="title">{item.title}</h6>
                   <div className="price">{item.price}</div>
                 </div>
               </Card>

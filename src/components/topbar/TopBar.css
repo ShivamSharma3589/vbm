@@ -1,16 +1,53 @@
-.topbar-wrapper {
+/* Importing Sofia fonts for the Logo design  */
+@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+
+.nav-logo {
+  font-family: 'Sofia', cursive !important;
+}
+
+.nav-logo span {
+  font-family: inherit;
+  color: #ff0303;
+}
+
+#topbar-wrapper {
   background-color: #000;
   color: #fff;
 }
 
-.topbar-wrapper .topbar {
+#topbar-wrapper.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99999;
+  animation: animate_fixed .3s ease-in-out;
+}
+
+@keyframes animate_fixed {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+#topbar-wrapper .app-bar {
+  position: static;
+}
+
+#topbar-wrapper .topbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px;
 }
 
-.topbar-wrapper ul {
+#topbar-wrapper ul {
   list-style: none;
   display: flex;
 }
