@@ -7,7 +7,7 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import "./AppCarousel.css";
+import "./AppCarousel.sass";
 
 const AppCarousel = ({data}) => {
   return (

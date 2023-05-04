@@ -13,6 +13,7 @@ import {
 import {
   AppCarousel,
   AppCategoryCarousel,
+  AppProductCarousel,
   AppProductsGrid,
 } from "../../components"; // Page components
 import { home } from "../../data"; // API data is being called
@@ -46,11 +47,16 @@ const HomePage = () => {
                   data={item.data}
                   heading={item.heading}
                   showText={item.showText}
+                  imageFit={item.imageFit}
                 />
               </section>
             );
           case HORIZONTAL_PRODUCTS:
-            return <div key={index}>Vertical Product</div>;
+            return (
+              <section key={index} className="section">
+                <AppProductCarousel heading={item.heading} data={item.data} />
+              </section>
+            );
           case VERTICAL_PRODUCTS:
             return <div key={index}>Vertical Product</div>;
           default:

@@ -5,7 +5,7 @@
 import React from "react";
 import { AppBar, IconButton, Toolbar, Typography } from "@mui/material";
 import { MenuUnfoldOutlined } from "@ant-design/icons";
-import "./TopBar.css";
+import "./TopBar.sass";
 import useScroll from "../../hooks/useScroll";
 
 const TopBar = () => {
@@ -13,7 +13,7 @@ const TopBar = () => {
   const isDeviceScrolled = useScroll();
   //#endregion
   return (
-    <div id="topbar-wrapper" className={isDeviceScrolled > 55 ? "fixed" : ""}>
+    <div id="topbar-wrapper" className={isDeviceScrolled > 55 ? "fixed topbar-wrapper" : "topbar-wrapper"}>
       <AppBar style={{ backgroundColor: "#000" }} className="app-bar">
         <Toolbar>
           <IconButton

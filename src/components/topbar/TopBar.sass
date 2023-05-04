@@ -1,0 +1,31 @@
+// Importing Sofia fonts for the Logo design
+@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap')
+
+.topbar-wrapper
+  background-color: #000
+  color: #fff
+  &.fixed
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    z-index: 99999
+    animation: animate_fixed .3s ease-in-out
+
+  .app-bar
+    position: static
+    .nav-logo
+      font-family: 'Sofia', cursive !important
+
+      span
+        font-family: inherit
+        color: #ff0303
+
+@keyframes animate_fixed
+  0%
+    transform: translateY(-50px)
+    opacity: 0
+
+  100%
+    transform: none
+    opacity: 1
