@@ -7,7 +7,6 @@
 import React from "react";
 import { Col, Row } from "antd";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import { FiEye } from "react-icons/fi";
 import "./AppProductsGrid.sass";
 
 const AppProductsGrid = ({ data, heading, showText, imageFit }) => {
