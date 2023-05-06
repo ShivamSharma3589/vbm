@@ -4,13 +4,22 @@
  * @date : 26-03-2023
  */
 
-import React from "react";
-import { Suspense } from "react";
+import React, { Suspense, lazy } from "react";
 import { Navigate, Route, Routes } from "react-router-dom";
 import CustomLoader from "../components/custom-loader/CustomLoader";
 
 const Navigation = () => {
-  const HomePage = React.lazy(() => import("../pages/home-page/HomePage"));
+  //#region for pages location
+
+  // Homepage key
+  const HomePage = lazy(() => import("../pages/home-page/HomePage"));
+
+  // Category page key
+  const CategoryPage = lazy(() =>
+    import("../pages/category-page/CategoryPage")
+  );
+  //#endregion
+
   return (
     <Suspense fallback={<CustomLoader />}>
       <Routes>
@@ -19,6 +28,14 @@ const Navigation = () => {
           element={
             <Suspense fallback={<CustomLoader />}>
               <HomePage />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/category/:product_id"
+          element={
+            <Suspense fallback={<CustomLoader />}>
+              <CategoryPage />
             </Suspense>
           }
         />

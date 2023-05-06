@@ -6,7 +6,7 @@
 
 import React from "react";
 import useScroll from "../../hooks/useScroll";
-import "./Header.css";
+import "./Header.sass";
 
 const Header = () => {
   //#region for states

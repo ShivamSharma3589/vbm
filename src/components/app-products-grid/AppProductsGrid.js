@@ -4,42 +4,40 @@
  * @date : 01 Apr 2023
  */
 
-import { Card, Col, Row } from "antd";
 import React from "react";
+import { Col, Row } from "antd";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import "./AppProductsGrid.css";
+import "./AppProductsGrid.sass";
 
-const AppProductsGrid = ({ data, heading, showText }) => {
+const AppProductsGrid = ({ data, heading, showText, imageFit }) => {
+  console.log(imageFit);
   return (
     <div className="app-products-grid-wrapper">
       {heading.length > 0 && <h4 className="section-heading">{heading}</h4>}
-      <Row gutter={[10, 10]} className="w-100">
+      <Row>
         {data.map((item) => {
           return (
-            <Col key={item.id} xs={12} sm={12} md={8} lg={6} xl={4}>
-              <Card size="small" className="product-card">
-                <div className="img-area">
-                  <LazyLoadImage
-                    src={item.src}
-                    alt={item.alt}
-                    title={item.title}
-                    className="bg-img"
-                  />
-                  <div className="blur-effect"></div>
-                  <LazyLoadImage
-                    src={item.src}
-                    alt={item.alt}
-                    title={item.title}
-                    className="img"
-                  />
-                </div>
-                {showText && (
-                  <div className="content-area">
-                    <h6 className="title">{item.title}</h6>
-                    <div className="price">{item.price}/piece</div>
+            <Col key={item.id} xs={12} sm={12} md={8} xl={6}>
+              <div className="product-item">
+                <div className="product-card">
+                  <div className="img-area">
+                    <LazyLoadImage
+                      src={item.src}
+                      alt={item.alt}
+                      title={item.title}
+                      className={`img ${imageFit}`}
+                    />
                   </div>
-                )}
-              </Card>
+                  {showText && (
+                    <div className="product-content">
+                      <div className="content-area">
+                        <h6 className="title">{item.title}</h6>
+                        <div className="price">{item.price}</div>
+                      </div>
+                    </div>
+                  )}
+                </div>
+              </div>
             </Col>
           );
         })}
