@@ -7,7 +7,6 @@ import React from "react";
 import { BrowserRouter } from "react-router-dom";
 import AppLayout from "./layout/AppLayout";
 import Navigation from "./navigator/Navigation";
-import "./App.css";
 
 const App = () => {
   return (

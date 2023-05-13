@@ -5,46 +5,43 @@
  */
 
 import React from "react";
-import OwlCarousel from "react-owl-carousel";
-import "owl.carousel/dist/assets/owl.carousel.css";
-import "owl.carousel/dist/assets/owl.theme.default.css";
-import "./AppProductCarousel.css";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { testCategory } from "../../data";
+import { ProductCard } from "../index";
+import "./AppProductCarousel.scss";
 
 const AppProductCarousel = ({ data, heading }) => {
-  //#region for States
-  //#endregion
-
-  //#region for Objects and Functions
-  //#endregion
-
-  //#region for useEffect
-  //#endregion
-
   return (
     <div className="app-product-carousel-wrapper">
       {heading.length > 0 && <h4 className="section-heading">{heading}</h4>}
-      <div className="slider-cards">
-        <OwlCarousel items={4} className="owl-theme" loop nav margin={8}>
-          {data?.map((item) => {
+      <div className="product-carousel">
+        <Swiper
+          breakpoints={{
+            0: {
+              slidesPerView: 1,
+            },
+            400: {
+              slidesPerView: 2.2,
+            },
+            565: {
+              slidesPerView: 2.2,
+            },
+            992: {
+              slidesPerView: 3.5,
+            },
+            1200: {
+              slidesPerView: 4.5,
+            },
+          }}
+        >
+          {testCategory?.map((item) => {
             return (
-              <div className="item" key={item.id}>
-                <div className="product-card">
-                  <div className="image-area">
-                    <img
-                      src="https://www.dl.dropboxusercontent.com/s/jk8wdyvyzordri2/promolist-3.jpg?dl=0"
-                      alt=""
-                    />
-                  </div>
-                  <div className="content-area">
-                    <h6 className="title">Bhaji Box</h6>
-                    <div className="desc">Lorem ipsum dolor sit amet.</div>
-                    <div className="price">₹100</div>
-                  </div>
-                </div>
-              </div>
+              <SwiperSlide className="swiper-slider" key={item.id}>
+                <ProductCard data={item} showText={true} imageFit={"cover"} />
+              </SwiperSlide>
             );
           })}
-        </OwlCarousel>
+        </Swiper>
       </div>
     </div>
   );

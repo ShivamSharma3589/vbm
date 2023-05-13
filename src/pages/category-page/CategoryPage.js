@@ -5,10 +5,9 @@
  */
 
 import React from "react";
-import "./CategoryPage.scss";
+import { ProductCard } from "../../components";
 import { testCategory } from "../../data";
-import { Link } from "react-router-dom";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+import "./CategoryPage.scss";
 
 const CategoryPage = () => {
   return (
@@ -18,23 +17,7 @@ const CategoryPage = () => {
           {testCategory?.map((item) => {
             return (
               <div className="category-item">
-                <article className="category-card">
-                  <Link to="" className="image-area">
-                    <LazyLoadImage
-                      src={item.src}
-                      alt={item.alt}
-                      title={item.title}
-                      effect="blur"
-                    />
-                  </Link>
-                  <div className="content-area">
-                    <Link to="" className="title">
-                      {item.title}
-                    </Link>
-                    <p className="desc">{item.desc}</p>
-                    <p className="price">{item.price}</p>
-                  </div>
-                </article>
+                <ProductCard data={item} showText={true} imageFit={"cover"} />
               </div>
             );
           })}
