@@ -11,7 +11,7 @@ import {
   VERTICAL_PRODUCTS,
 } from "../../constants"; // constant keys
 import {
-  AppCarousel,
+  AppBannerCarousel,
   AppCategoryCarousel,
   AppProductCarousel,
   AppProductsGrid,
@@ -27,7 +27,7 @@ const HomePage = () => {
           case BANNER:
             return (
               <section key={index}>
-                <AppCarousel data={item.data} />
+                <AppBannerCarousel data={item.data} />
               </section>
             );
           case CATEGORY:

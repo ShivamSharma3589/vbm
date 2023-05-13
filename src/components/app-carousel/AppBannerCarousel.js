@@ -7,9 +7,9 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import "./AppCarousel.sass";
+import "./AppBannerCarousel.scss";
 
-const AppCarousel = ({data}) => {
+const AppBannerCarousel = ({data}) => {
   return (
     <div className="app-carousel-wrapper">
       <Carousel>
@@ -36,4 +36,4 @@ const AppCarousel = ({data}) => {
   );
 };
 
-export default AppCarousel;
+export default AppBannerCarousel;
