@@ -17,6 +17,7 @@ import {
   AppProductsGrid,
 } from "../../components"; // Page components
 import { home } from "../../data"; // API data is being called
+import "./HomePage.scss";
 
 const HomePage = () => {
   return (

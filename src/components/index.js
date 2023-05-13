@@ -8,6 +8,7 @@ import AppBannerCarousel from "./app-banner-carousel/AppBannerCarousel";
 import AppCategoryCarousel from "./app-category-carousel/AppCategoryCarousel";
 import AppProductsGrid from "./app-products-grid/AppProductsGrid";
 import AppProductCarousel from "./app-product-carousel/AppProductCarousel";
+import ProductCard from "./product-card/ProductCard";
 
 export {
   AppBannerCarousel,
@@ -20,4 +21,5 @@ export {
   BottomNav,
   ProductGrid,
   Header,
+  ProductCard,
 };
