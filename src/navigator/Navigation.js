@@ -14,6 +14,9 @@ const Navigation = () => {
   // Homepage key
   const HomePage = lazy(() => import("../pages/home-page/HomePage"));
 
+  // About Us page key
+  const AboutUsPage = lazy(() => import("../pages/about-us-page/AboutUsPage"));
+
   // Category page key
   const CategoryPage = lazy(() =>
     import("../pages/category-page/CategoryPage")
@@ -28,6 +31,14 @@ const Navigation = () => {
           element={
             <Suspense fallback={<CustomLoader />}>
               <HomePage />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/about"
+          element={
+            <Suspense fallback={<CustomLoader />}>
+              <AboutUsPage />
             </Suspense>
           }
         />

@@ -57,7 +57,7 @@ const AppCategoryCarousel = ({ data, heading, showText }) => {
         {data.map((item) => {
           return (
             <li key={item.id} className="list-item">
-              <Link to="/" className="link">
+              <Link to={`/category/${item.id}`} className="link">
                 <div className="img-area">
                   <LazyLoadImage
                     src={item.src}

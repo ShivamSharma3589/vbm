@@ -7,6 +7,7 @@
 import React from "react";
 import useScroll from "../../hooks/useScroll";
 import "./Header.sass";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   //#region for states
@@ -25,24 +26,24 @@ const Header = () => {
           <nav className="nav-bar">
             <ul>
               <li>
-                <a className="nav-links" href="/">
+                <Link className="nav-links" to="/">
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="nav-links" href="/">
+                <Link className="nav-links" to="/about">
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="nav-links" href="/">
+                <Link className="nav-links" to="/">
                   Products
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="nav-links" href="/">
+                <Link className="nav-links" to="/">
                   Contact Us
-                </a>
+                </Link>
               </li>
             </ul>
           </nav>
