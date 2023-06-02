@@ -5,7 +5,7 @@
 import React from "react";
 import { BottomNav, Header, TopBar } from "../components";
 import useMobileDevice from "../hooks/useMobileDevice";
-import "./AppLayout.css";
+import "./AppLayout.scss";
 
 const AppLayout = ({ children }) => {
   //#region for states
