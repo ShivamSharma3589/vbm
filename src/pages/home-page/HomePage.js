@@ -1,10 +1,11 @@
 /**
- * HOME PAGE
+ * THIS IS THE HOMEPAGE
+ * @author: shivayasharma1149@gmail.com
+ * @date : 02 June 2023
  */
 
 import React from "react";
 import {
-  BANNER,
   CATEGORY,
   HORIZONTAL_PRODUCTS,
   PRODUCT_GRID,
@@ -15,6 +16,7 @@ import {
   AppCategoryCarousel,
   AppProductCarousel,
   AppProductsGrid,
+  AppValues,
 } from "../../components"; // Page components
 import { home } from "../../data"; // API data is being called
 import "./HomePage.scss";
@@ -22,15 +24,20 @@ import "./HomePage.scss";
 const HomePage = () => {
   return (
     <div className="homepage-wrapper">
+      {/* APP BANNER CAROUSEL STARTS */}
+      <section>
+        <AppBannerCarousel data={home.elements[0].data} />
+      </section>
+      {/* APP BANNER CAROUSEL ENDS */}
+
+      {/* OUR VALUES STARTS */}
+      <section>
+        <AppValues />
+      </section>
+      {/* OUR VALUES ENDS */}
       {home.elements?.map((item, index) => {
         // eslint-disable-next-line default-case
         switch (item.type) {
-          case BANNER:
-            return (
-              <section key={index}>
-                <AppBannerCarousel data={item.data} />
-              </section>
-            );
           case CATEGORY:
             return (
               <section key={index} className="section">

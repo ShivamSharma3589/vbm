@@ -1,0 +1,24 @@
+// APP BANNER CAROUSEL STARTS
+.app-carousel-wrapper {
+  // APP CAROUSEL STARTS
+  .app-carousel-slide {
+    a {
+      position: relative;
+      padding-top: 41%;
+      overflow: hidden;
+      display: block;
+
+      .app-carousel-image {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  // APP CAROUSEL ENDS
+}
+// APP BANNER CAROUSEL ENDS

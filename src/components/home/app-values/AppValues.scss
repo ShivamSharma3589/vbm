@@ -1,0 +1,46 @@
+@import "./../../../scss/variable";
+
+.our-values-wrapper {
+  padding: 30px 10px;
+
+  .our-values-grid {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    margin: 30px auto;
+
+    .grid-item {
+      width: 25%;
+      padding: 10px;
+
+      .grid-card {
+        background-color: #fffae6;
+        text-align: center;
+        padding: 40px 10px;
+        border-radius: 3px;
+
+        .grid-icon {
+          background-color: $THEME_TEXT_COLOR;
+          color: #fff;
+          width: 65px;
+          height: 65px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 0 auto;
+          border-radius: 50%;
+          margin-bottom: 15px;
+
+          svg {
+            font-size: 30px;
+          }
+        }
+
+        .grid-title {
+          font-size: 14px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
