@@ -21,7 +21,9 @@ import {
 import { home } from "../../data"; // API data is being called
 import "./HomePage.scss";
 import {
+  AppCategoryCarousel,
   AppNewsLetter,
+  AppRecommendation,
   AppTodaysDeal,
   AppTrendingBoxes,
 } from "../../components/home";
@@ -52,6 +54,18 @@ const HomePage = () => {
         <AppTrendingBoxes />
       </section>
       {/* TRENDING BOXES SECTION ENDS */}
+
+      {/* TOP CATEGORIES SECTION STARTS */}
+      <section>
+        <AppCategoryCarousel />
+      </section>
+      {/* TOP CATEGORIES SECTION ENDS */}
+
+      {/* RECOMMENDATION SECTION STARTS  */}
+      <section>
+        <AppRecommendation />
+      </section>
+      {/* RECOMMENDATION SECTION ENDS */}
 
       {/* NEWSLETTER SECTION STARTS */}
       <section>

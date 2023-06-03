@@ -4,48 +4,53 @@
  * @date : 03 June 2023
  */
 
-import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { testCategory } from "../../../data";
-import { Header2, ProductCard } from "../../common";
+import React, { useState } from "react";
+import { CardsCarousel } from "../../common";
 import "./AppTrendingBoxes.scss";
 
 const AppTrendingBoxes = () => {
+  //#region
+  const [selectedTab, setSelectedTab] = useState("latest");
+  //#endregion
+
   return (
     <div className="trending-boxes-wrapper">
-      <Header2 />
+      <header className="header-2">
+        <div className="title-area">
+          <h2>
+            Trending
+            <span> Boxes</span>
+          </h2>
+        </div>
+        <div className="action-button-area">
+          <button
+            type="button"
+            className={`btn ${selectedTab === "latest" ? "selected" : ""}`}
+            onClick={() => setSelectedTab("latest")}
+          >
+            Latest
+          </button>
+          <button
+            type="button"
+            className={`btn ${selectedTab === "featured" ? "selected" : ""}`}
+            onClick={() => setSelectedTab("featured")}
+          >
+            Featured
+          </button>
+          <button
+            type="button"
+            className={`btn ${selectedTab === "best-seller" ? "selected" : ""}`}
+            onClick={() => setSelectedTab("best-seller")}
+          >
+            Best Seller
+          </button>
+        </div>
+      </header>
 
       <div className="trending-boxes-carousels">
-        <div className="trending-carousel">
-          <Swiper
-            breakpoints={{
-              0: {
-                slidesPerView: 1,
-              },
-              400: {
-                slidesPerView: 2.2,
-              },
-              565: {
-                slidesPerView: 2.2,
-              },
-              992: {
-                slidesPerView: 3.5,
-              },
-              1200: {
-                slidesPerView: 4,
-              },
-            }}
-            loop={true}
-          >
-            {testCategory?.map((item) => {
-              return (
-                <SwiperSlide key={item.id}>
-                  <ProductCard />
-                </SwiperSlide>
-              );
-            })}
-          </Swiper>
-        </div>
+        {selectedTab === "latest" && <CardsCarousel />}
+        {selectedTab === "featured" && <CardsCarousel />}
+        {selectedTab === "best-seller" && <CardsCarousel />}
       </div>
     </div>
   );

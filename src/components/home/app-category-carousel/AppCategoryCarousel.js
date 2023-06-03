@@ -1,15 +1,17 @@
 /**
  * COMPONENT FOR CIRCULAR CATEGORY CAROUSEL
  * @author: shivayasharma1149@gmail.com
- * @date : 01 Apr 2023
+ * @date : 04 June 2023
  */
 
 import React, { useRef } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Link } from "react-router-dom";
-import "./AppCategoryCarousel.css";
+import "./AppCategoryCarousel.scss";
+import { home } from "../../../data";
 
-const AppCategoryCarousel = ({ data, heading, showText }) => {
+const AppCategoryCarousel = ({ showText }) => {
+  const data = home.elements[1].data;
   //#region
   /**
    * Below code is for hanle the dragging of the horizontal scrollable content
@@ -45,7 +47,20 @@ const AppCategoryCarousel = ({ data, heading, showText }) => {
 
   return (
     <div className="app-category-wrapper">
-      {heading.length > 0 && <h4 className="section-heading">{heading}</h4>}
+      <header className="header-2">
+        <div className="title-area">
+          <h2>
+            Top
+            <span> Categories</span>
+          </h2>
+        </div>
+        <div className="action-button-area">
+          <button type="button" className="btn selected">
+            View All
+          </button>
+        </div>
+      </header>
+
       <ul
         className="list section-draggable"
         ref={containerRef}
