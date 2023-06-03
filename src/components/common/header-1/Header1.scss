@@ -5,7 +5,7 @@
   padding: 10px;
 
   p {
-    color: $THEME_TEXT_COLOR;
+    color: $THEME_COLOR;
     font-weight: 600;
     font-size: 16px;
     margin-bottom: 0;
@@ -22,7 +22,7 @@
       transform: translateY(-50%);
       width: 40px;
       height: 2px;
-      background-color: $THEME_TEXT_COLOR;
+      background-color: $THEME_COLOR;
     }
 
     &::before {

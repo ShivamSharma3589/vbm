@@ -5,22 +5,22 @@
  */
 
 import React from "react";
-import {
-  CATEGORY,
-  HORIZONTAL_PRODUCTS,
-  PRODUCT_GRID,
-  VERTICAL_PRODUCTS,
-} from "../../constants"; // constant keys
+// import {
+//   CATEGORY,
+//   HORIZONTAL_PRODUCTS,
+//   PRODUCT_GRID,
+//   VERTICAL_PRODUCTS,
+// } from "../../constants"; // constant keys
 import {
   AppBannerCarousel,
-  AppCategoryCarousel,
-  AppProductCarousel,
-  AppProductsGrid,
+  // AppCategoryCarousel,
+  // AppProductCarousel,
+  // AppProductsGrid,
   AppValues,
 } from "../../components"; // Page components
 import { home } from "../../data"; // API data is being called
 import "./HomePage.scss";
-import { AppTodaysDeal } from "../../components/home";
+import { AppTodaysDeal, AppTrendingBoxes } from "../../components/home";
 
 const HomePage = () => {
   return (
@@ -43,6 +43,12 @@ const HomePage = () => {
       </section>
       {/* WHAT ARE YOU LOOKING FOR TODAY ENDS */}
 
+      {/* TRENDING BOXES SECTION STARTS */}
+      <section>
+        <AppTrendingBoxes />
+      </section>
+      {/* TRENDING BOXES SECTION ENDS */}
+{/* 
       {home.elements?.map((item, index) => {
         // eslint-disable-next-line default-case
         switch (item.type) {
@@ -78,7 +84,7 @@ const HomePage = () => {
           default:
             return null;
         }
-      })}
+      })} */}
     </div>
   );
 };
