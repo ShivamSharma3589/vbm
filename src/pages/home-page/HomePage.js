@@ -20,7 +20,11 @@ import {
 } from "../../components"; // Page components
 import { home } from "../../data"; // API data is being called
 import "./HomePage.scss";
-import { AppTodaysDeal, AppTrendingBoxes } from "../../components/home";
+import {
+  AppNewsLetter,
+  AppTodaysDeal,
+  AppTrendingBoxes,
+} from "../../components/home";
 
 const HomePage = () => {
   return (
@@ -48,7 +52,13 @@ const HomePage = () => {
         <AppTrendingBoxes />
       </section>
       {/* TRENDING BOXES SECTION ENDS */}
-{/* 
+
+      {/* NEWSLETTER SECTION STARTS */}
+      <section>
+        <AppNewsLetter />
+      </section>
+      {/* NEWSLETTER SECTION ENDS */}
+      {/* 
       {home.elements?.map((item, index) => {
         // eslint-disable-next-line default-case
         switch (item.type) {
