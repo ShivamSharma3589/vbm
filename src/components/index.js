@@ -5,6 +5,7 @@ import BottomNav from "./bottom-nav/BottomNav";
 import ProductGrid from "./product-grid/ProductGrid";
 import Header from "./desktop-header/DesktopHeader";
 import AppCategoryCarousel from "./app-category-carousel/AppCategoryCarousel";
+import Footer from "./footer/Footer";
 
 export {
   AppBannerCarousel,
@@ -15,4 +16,5 @@ export {
   BottomNav,
   ProductGrid,
   Header,
+  Footer,
 };

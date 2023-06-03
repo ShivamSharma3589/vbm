@@ -3,7 +3,7 @@
  */
 
 import React from "react";
-import { BottomNav, Header, TopBar } from "../components";
+import { BottomNav, Footer, Header, TopBar } from "../components";
 import useMobileDevice from "../hooks/useMobileDevice";
 import "./AppLayout.scss";
 
@@ -19,11 +19,12 @@ const AppLayout = ({ children }) => {
         isMobile ? <TopBar /> : <Header />
       }
       <main className="main-content">
-      {
-        // Main content will render here
-        children
-      }
+        {
+          // Main content will render here
+          children
+        }
       </main>
+      <Footer />
       {
         // Rendering bottom navigation on the basis of the window size
         isMobile && <BottomNav />
