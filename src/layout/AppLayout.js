@@ -3,7 +3,7 @@
  */
 
 import React from "react";
-import { BottomNav, Footer, Header, TopBar } from "../components";
+import { BottomNav, Footer, Header, MobileHeader } from "../components";
 import useMobileDevice from "../hooks/useMobileDevice";
 import "./AppLayout.scss";
 
@@ -16,7 +16,7 @@ const AppLayout = ({ children }) => {
     <div className="app-layout-wrapper">
       {
         // Rendering header on the basis of the client device width
-        isMobile ? <TopBar /> : <Header />
+        isMobile ? <MobileHeader /> : <Header />
       }
       <main className="main-content">
         {

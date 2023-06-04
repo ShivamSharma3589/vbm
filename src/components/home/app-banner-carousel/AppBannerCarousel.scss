@@ -22,3 +22,19 @@
   // APP CAROUSEL ENDS
 }
 // APP BANNER CAROUSEL ENDS
+
+// MEDIA QUERIES STARTS
+@media (max-width: 565px) {
+  // APP BANNER CAROUSEL STARTS
+  .app-carousel-wrapper {
+    // APP CAROUSEL STARTS
+    .app-carousel-slide {
+      a {
+        padding-top: 60%;
+      }
+    }
+    // APP CAROUSEL ENDS
+  }
+  // APP BANNER CAROUSEL ENDS
+}
+// MEDIA QUERIES ENDS

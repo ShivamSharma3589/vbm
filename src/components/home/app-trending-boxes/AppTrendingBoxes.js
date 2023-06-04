@@ -15,7 +15,7 @@ const AppTrendingBoxes = () => {
 
   return (
     <div className="trending-boxes-wrapper">
-      <header className="header-2">
+      <header className="header-2 wrap">
         <div className="title-area">
           <h2>
             Trending

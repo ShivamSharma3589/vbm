@@ -6,3 +6,13 @@
   }
 }
 // TRENDING BOX CAROUSEL ENDS
+
+// MEDIA QUERIES STARTS
+@media (max-width: 565px) {
+  // TRENDING BOX CAROUSEL STARTS
+  .trending-boxes-wrapper {
+    margin-bottom: 0px;
+  }
+  // TRENDING BOX CAROUSEL ENDS
+}
+// MEDIA QUERIES ENDS

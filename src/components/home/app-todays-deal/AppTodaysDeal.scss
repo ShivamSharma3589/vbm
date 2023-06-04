@@ -98,4 +98,16 @@
   }
   // TODAY'S DEAL WRAPPER ENDS
 }
+@media (max-width: 565px) {
+  // TODAY'S DEAL WRAPPER STARTS
+  .todays-deal-wrapper {
+    // TODAYS DEAL GRID WRAPPER STARTS
+    .todays-deal-grid {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    // TODAYS DEAL GRID WRAPPER ENDS
+  }
+  // TODAY'S DEAL WRAPPER ENDS
+}
 // MEDIA QUERIES ENDS
