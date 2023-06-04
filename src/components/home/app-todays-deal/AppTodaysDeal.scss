@@ -66,3 +66,41 @@
   // TODAYS DEAL GRID WRAPPER ENDS
 }
 // TODAY'S DEAL WRAPPER ENDS
+
+// MEDIA QUERIES STARTS
+@media (max-width: 767px) {
+  // TODAY'S DEAL WRAPPER STARTS
+  .todays-deal-wrapper {
+    // TODAYS DEAL GRID WRAPPER STARTS
+    .todays-deal-grid {
+      grid-template-columns: 100%;
+
+      // GRID ITEM STARTS
+      .grid-item {
+        // COLUMNS DIVISION STARTS
+        &.first {
+          padding: 10px;
+        }
+        &.second {
+          padding: 0 5px 0 10px;
+        }
+        &.third {
+          padding: 0 10px 0 5px;
+        }
+        &.four {
+          padding: 10px 10px 10px;
+
+          // IMAGE LINK AND AREA STARTS
+          a {
+            padding-top: calc(50% - 15px);
+          }
+        }
+        // COLUMNS DIVISION ENDS
+      }
+      // GRID ITEM ENDS
+    }
+    // TODAYS DEAL GRID WRAPPER ENDS
+  }
+  // TODAY'S DEAL WRAPPER ENDS
+}
+// MEDIA QUERIES ENDS
