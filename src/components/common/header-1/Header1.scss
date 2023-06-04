@@ -1,5 +1,6 @@
 @import "./../../../scss/variable";
 
+// HEADER 1 STARTS
 .section-header-1 {
   text-align: center;
   padding: 10px;
@@ -37,3 +38,21 @@
     margin-bottom: 0;
   }
 }
+// HEADER 1 ENDS
+
+// MEDIA QUERIES STARTS
+@media (max-width: 565px) {
+  // HEADER 1 STARTS
+  .section-header-1 {
+
+    p {
+      font-size: 14px;
+    }
+
+    h2 {
+      font-size: 20px;
+    }
+  }
+  // HEADER 1 ENDS
+}
+// MEDIA QUERIES ENDS
