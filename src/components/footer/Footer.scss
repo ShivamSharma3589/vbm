@@ -148,3 +148,67 @@
   // BOTTOM AREA ENDS
 }
 // FOOTER SECTION ENDS
+
+// MEDIA QUERIES STARTS
+@media (max-width: 767px) {
+  // FOOTER SECTION STARTS
+  .footer-section {
+    .footer-wrapper {
+      // UPPER ROW SECTION STARTS
+      .upper-row {
+        grid-template-columns: repeat(2, 50%);
+
+        // ADDRESS AREA STARTS
+        .address-column {
+          margin-bottom: 15px;
+        }
+        // ADDRESS AREA ENDS
+      }
+      // UPPER ROW SECTION ENDS
+    }
+  }
+  // FOOTER SECTION ENDS
+}
+
+@media (max-width: 565px) {
+  // FOOTER SECTION STARTS
+  .footer-section {
+    text-align: center;
+    .footer-wrapper {
+      // UPPER ROW SECTION STARTS
+      .upper-row {
+        grid-template-columns: 100%;
+        // ADDRESS AREA STARTS
+        .address-column {
+          padding: 10px;
+
+          // FOOTER LOGO AREA STARTS
+          .footer-logo-area {
+            // LOGO AREA STARTS
+            .logo-area {
+              justify-content: center;
+            }
+            // LOGO AREA ENDS
+          }
+          // FOOTER LOGO AREA ENDS
+
+          // SOCIAL MEDIA LINKS WRAPPER STARTS
+          .social-media-links-wrapper {
+            ul {
+              margin: auto;
+
+              li {
+                margin-right: 0;
+              }
+            }
+          }
+          // SOCIAL MEDIA LINKS WRAPPER ENDS
+        }
+        // ADDRESS AREA ENDS
+      }
+      // UPPER ROW SECTION ENDS
+    }
+  }
+  // FOOTER SECTION ENDS
+}
+// MEDIA QUERIES ENDS
