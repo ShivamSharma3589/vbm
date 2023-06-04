@@ -4,22 +4,9 @@
  * @date : 02 June 2023
  */
 
-import React from "react";
-// import {
-//   CATEGORY,
-//   HORIZONTAL_PRODUCTS,
-//   PRODUCT_GRID,
-//   VERTICAL_PRODUCTS,
-// } from "../../constants"; // constant keys
-import {
-  AppBannerCarousel,
-  // AppCategoryCarousel,
-  // AppProductCarousel,
-  // AppProductsGrid,
-  AppValues,
-} from "../../components"; // Page components
+import React, { useEffect } from "react";
+import { AppBannerCarousel, AppValues } from "../../components"; // Page components
 import { home } from "../../data"; // API data is being called
-import "./HomePage.scss";
 import {
   AppCategoryCarousel,
   AppNewsLetter,
@@ -27,8 +14,32 @@ import {
   AppTodaysDeal,
   AppTrendingBoxes,
 } from "../../components/home";
+import "./HomePage.scss";
+import { getData } from "../../api-helper/ApiHelper";
+import { API_KEYS } from "../../config/AppConfig";
 
 const HomePage = () => {
+  //#region for states and objects
+
+  //#endregion
+
+  //#region for fucntions
+
+  // Example usage
+  //#endregion
+  
+  //#region for useEffect
+  useEffect(() => {
+    
+    // TO GET DATA FOR HOMEPAGE 
+    getData(API_KEYS.HOMEPAGE).then((jsonData) => {
+      // Process the JSON data
+      console.log(jsonData);
+    });
+
+  }, []);
+  //#endregion
+
   return (
     <div className="homepage-wrapper">
       {/* APP BANNER CAROUSEL STARTS */}
@@ -72,43 +83,6 @@ const HomePage = () => {
         <AppNewsLetter />
       </section>
       {/* NEWSLETTER SECTION ENDS */}
-      {/* 
-      {home.elements?.map((item, index) => {
-        // eslint-disable-next-line default-case
-        switch (item.type) {
-          case CATEGORY:
-            return (
-              <section key={index} className="section">
-                <AppCategoryCarousel
-                  data={item.data}
-                  heading={item.heading}
-                  showText={item.showText}
-                />
-              </section>
-            );
-          case PRODUCT_GRID:
-            return (
-              <section key={index} className="section">
-                <AppProductsGrid
-                  data={item.data}
-                  heading={item.heading}
-                  showText={item.showText}
-                  imageFit={item.imageFit}
-                />
-              </section>
-            );
-          case HORIZONTAL_PRODUCTS:
-            return (
-              <section key={index} className="section">
-                <AppProductCarousel heading={item.heading} data={item.data} />
-              </section>
-            );
-          case VERTICAL_PRODUCTS:
-            return <div key={index}>Vertical Product</div>;
-          default:
-            return null;
-        }
-      })} */}
     </div>
   );
 };
