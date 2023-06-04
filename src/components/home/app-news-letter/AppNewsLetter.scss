@@ -33,3 +33,22 @@
   }
 }
 // NEWSLETTER SECTION ENDS
+
+// MEDIA QUERIES STARTS
+@media (max-width: 767px) {
+  // NEWSLETTER SECTION STARTS
+  .news-letter-section {
+    padding: 40px 10px;
+
+    .news-letter-wrapper {
+      text-align: center;
+      max-width: none;
+
+      h2 {
+        font-size: 25px;
+      }
+    }
+  }
+  // NEWSLETTER SECTION ENDS
+}
+// MEDIA QUERIES ENDS
