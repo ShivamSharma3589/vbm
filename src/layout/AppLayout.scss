@@ -1,0 +1,6 @@
+@import "./../scss/variable";
+
+.app-layout-wrapper .main-content {
+  max-width: $CONTAINER_MAX_WIDTH;
+  margin: auto;
+}

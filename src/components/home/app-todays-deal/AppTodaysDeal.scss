@@ -1,0 +1,113 @@
+// TODAY'S DEAL WRAPPER STARTS
+.todays-deal-wrapper {
+  // TODAYS DEAL GRID WRAPPER STARTS
+  .todays-deal-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    max-width: 1200px;
+    margin: 30px auto;
+
+    // GRID ITEM STARTS
+    .grid-item {
+      // INNER GRID STARTS
+      .todays-deal-inner-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+      }
+      // INNER GRID ENDS
+
+      // IMAGE LINK AND AREA STARTS
+      a {
+        position: relative;
+        padding-top: 100%;
+        display: block;
+        overflow: hidden;
+
+        img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: 0.3s ease-in-out;
+        }
+
+        &:hover {
+          img {
+            transform: scale(1.1);
+          }
+        }
+      }
+      // IMAGE LINK AND AREA ENDS
+
+      // COLUMNS DIVISION STARTS
+      &.first {
+        padding: 10px;
+      }
+      &.second {
+        padding: 10px 10px 10px 0;
+      }
+      &.third {
+        padding: 10px 10px 10px 0;
+      }
+      &.four {
+        padding: 0 10px 10px 0;
+
+        // IMAGE LINK AND AREA STARTS
+        a {
+          padding-top: calc(50% - 15px);
+        }
+      }
+      // COLUMNS DIVISION ENDS
+    }
+    // GRID ITEM ENDS
+  }
+  // TODAYS DEAL GRID WRAPPER ENDS
+}
+// TODAY'S DEAL WRAPPER ENDS
+
+// MEDIA QUERIES STARTS
+@media (max-width: 767px) {
+  // TODAY'S DEAL WRAPPER STARTS
+  .todays-deal-wrapper {
+    // TODAYS DEAL GRID WRAPPER STARTS
+    .todays-deal-grid {
+      grid-template-columns: 100%;
+
+      // GRID ITEM STARTS
+      .grid-item {
+        // COLUMNS DIVISION STARTS
+        &.first {
+          padding: 10px;
+        }
+        &.second {
+          padding: 0 5px 0 10px;
+        }
+        &.third {
+          padding: 0 10px 0 5px;
+        }
+        &.four {
+          padding: 10px 10px 10px;
+        }
+        // COLUMNS DIVISION ENDS
+      }
+      // GRID ITEM ENDS
+    }
+    // TODAYS DEAL GRID WRAPPER ENDS
+  }
+  // TODAY'S DEAL WRAPPER ENDS
+}
+@media (max-width: 565px) {
+  // TODAY'S DEAL WRAPPER STARTS
+  .todays-deal-wrapper {
+    // TODAYS DEAL GRID WRAPPER STARTS
+    .todays-deal-grid {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    // TODAYS DEAL GRID WRAPPER ENDS
+  }
+  // TODAY'S DEAL WRAPPER ENDS
+}
+// MEDIA QUERIES ENDS

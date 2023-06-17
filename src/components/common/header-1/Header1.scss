@@ -1,0 +1,58 @@
+@import "./../../../scss/variable";
+
+// HEADER 1 STARTS
+.section-header-1 {
+  text-align: center;
+  padding: 10px;
+
+  p {
+    color: $THEME_COLOR;
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 0;
+    position: relative;
+    display: inline-block;
+    padding: 0 10px;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 100%;
+      transform: translateY(-50%);
+      width: 40px;
+      height: 2px;
+      background-color: $THEME_COLOR;
+    }
+
+    &::before {
+      right: 100%;
+      left: unset;
+    }
+  }
+
+  h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 0;
+  }
+}
+// HEADER 1 ENDS
+
+// MEDIA QUERIES STARTS
+@media (max-width: 565px) {
+  // HEADER 1 STARTS
+  .section-header-1 {
+
+    p {
+      font-size: 14px;
+    }
+
+    h2 {
+      font-size: 20px;
+    }
+  }
+  // HEADER 1 ENDS
+}
+// MEDIA QUERIES ENDS

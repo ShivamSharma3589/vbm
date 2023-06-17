@@ -1,25 +1,18 @@
-import TopBar from "./topbar/TopBar";
+import { AppBannerCarousel, AppValues } from "./home";
+import MobileHeader from "./mobile-header/MobileHeader";
 import PromoList from "./promolist/PromoList";
-import Banner from "./carousel/Banner";
 import BottomNav from "./bottom-nav/BottomNav";
 import ProductGrid from "./product-grid/ProductGrid";
-import Header from "./header/Header";
-import AppBannerCarousel from "./app-banner-carousel/AppBannerCarousel";
-import AppCategoryCarousel from "./app-category-carousel/AppCategoryCarousel";
-import AppProductsGrid from "./app-products-grid/AppProductsGrid";
-import AppProductCarousel from "./app-product-carousel/AppProductCarousel";
-import ProductCard from "./product-card/ProductCard";
+import Header from "./desktop-header/DesktopHeader";
+import Footer from "./footer/Footer";
 
 export {
   AppBannerCarousel,
-  AppCategoryCarousel,
-  AppProductsGrid,
-  AppProductCarousel,
-  TopBar,
+  AppValues,
   PromoList,
-  Banner,
   BottomNav,
   ProductGrid,
   Header,
-  ProductCard,
+  Footer,
+  MobileHeader,
 };

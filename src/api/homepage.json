@@ -1,0 +1,253 @@
+{
+  "home": {
+    "banner": [
+      {
+        "img": "https://images.pexels.com/photos/6578933/pexels-photo-6578933.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "redirectTo": "/"
+      },
+      {
+        "img": "https://images.pexels.com/photos/7966082/pexels-photo-7966082.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "redirectTo": "/"
+      },
+      {
+        "img": "https://images.pexels.com/photos/7966455/pexels-photo-7966455.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "redirectTo": "/"
+      },
+      {
+        "img": "https://images.pexels.com/photos/5905690/pexels-photo-5905690.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "redirectTo": "/"
+      }
+    ],
+    "ourValues": {
+      "subTitle": "Our Values",
+      "title": "Our values are the reason behind our success",
+      "icons": [
+        {
+          "icon": "quality",
+          "title": "Quality"
+        },
+        {
+          "icon": "design",
+          "title": "Design"
+        },
+        {
+          "icon": "relationship",
+          "title": "Excellent Customer Relationship"
+        },
+        {
+          "icon": "experience",
+          "title": "Experience"
+        }
+      ]
+    },
+    "todays-deal": {
+      "subTitle": "Our Values",
+      "title": "What are you looking for today?",
+      "images": {
+        "first": {
+          "img": "https://www.dl.dropboxusercontent.com/s/opnbvo88evwmx42/promolist-4.jpg?dl=0",
+          "redirectTo": "/"
+        },
+        "second": {
+          "img": "https://www.dl.dropboxusercontent.com/s/jk8wdyvyzordri2/promolist-3.jpg?dl=0",
+          "redirectTo": "/"
+        },
+        "third": {
+          "img": "https://www.dl.dropboxusercontent.com/s/y1feyazv0m5ds4v/promolist-2.jpg?dl=0",
+          "redirectTo": "/"
+        },
+        "fourth": {
+          "img": "https://www.dl.dropboxusercontent.com/s/jk8wdyvyzordri2/promolist-3.jpg?dl=0",
+          "redirectTo": "/"
+        }
+      }
+    },
+    "trendings": {
+      "tilte": {
+        "text": "Trending",
+        "coloredText": " Boxes"
+      },
+      "options": [
+        {
+          "id": "latest",
+          "title": "Latest"
+        },
+        {
+          "id": "featured",
+          "title": "Featured"
+        },
+        {
+          "id": "best-seller",
+          "title": "Best Seller"
+        }
+      ],
+      "data": {
+        "latest": [
+          {
+            "id": "1",
+            "img": "https://www.dl.dropboxusercontent.com/s/y1feyazv0m5ds4v/promolist-2.jpg?dl=0",
+            "tilte": "Sweet Boxes",
+            "desc": "The above is a bhaji sweet box",
+            "btn": {
+              "title": "View Details",
+              "redirectTo": "/"
+            },
+            "price": "₹1599"
+          }
+        ],
+        "featured": [
+          {
+            "id": "1",
+            "img": "https://www.dl.dropboxusercontent.com/s/opnbvo88evwmx42/promolist-4.jpg?dl=0",
+            "tilte": "Sweet Boxes featured",
+            "desc": "The above is a bhaji sweet box",
+            "btn": {
+              "title": "View Details",
+              "redirectTo": "/"
+            },
+            "price": "₹15"
+          }
+        ],
+        "bestSeller": [
+          {
+            "id": "1",
+            "img": "https://www.dl.dropboxusercontent.com/s/jk8wdyvyzordri2/promolist-3.jpg?dl=0",
+            "tilte": "Sweet Boxes Best Seller",
+            "desc": "The above is a bhaji sweet box",
+            "btn": {
+              "title": "View Details",
+              "redirectTo": "/"
+            },
+            "price": "₹150"
+          }
+        ]
+      }
+    },
+    "categories": {
+      "title": {
+        "text": "Top",
+        "coloredText": " Categories"
+      },
+      "data": [
+        {
+          "id": 1,
+          "img": "https://www.dl.dropboxusercontent.com/s/28erpcxi5ragbeg/promolist-1.jpg?dl=0",
+          "title": "Promolist 1",
+          "redirectTo": "/"
+        },
+        {
+          "id": 2,
+          "img": "https://www.dl.dropboxusercontent.com/s/y1feyazv0m5ds4v/promolist-2.jpg?dl=0",
+          "title": "Promolist 2",
+          "redirectTo": "/"
+        },
+        {
+          "id": 3,
+          "img": "https://www.dl.dropboxusercontent.com/s/jk8wdyvyzordri2/promolist-3.jpg?dl=0",
+          "title": "Promolist 3",
+          "redirectTo": "/"
+        },
+        {
+          "id": 4,
+          "img": "https://www.dl.dropboxusercontent.com/s/opnbvo88evwmx42/promolist-4.jpg?dl=0",
+          "title": "Promolist 4",
+          "redirectTo": "/"
+        },
+        {
+          "id": 5,
+          "img": "https://www.dl.dropboxusercontent.com/s/8pbe9yyk598kri0/promolist-5.jpg?dl=0",
+          "title": "Promolist 5",
+          "redirectTo": "/"
+        },
+        {
+          "id": 6,
+          "img": "https://www.dl.dropboxusercontent.com/s/28erpcxi5ragbeg/promolist-1.jpg?dl=0",
+          "title": "Promolist 1",
+          "redirectTo": "/"
+        },
+        {
+          "id": 7,
+          "img": "https://www.dl.dropboxusercontent.com/s/y1feyazv0m5ds4v/promolist-2.jpg?dl=0",
+          "title": "Promolist 2",
+          "redirectTo": "/"
+        },
+        {
+          "id": 8,
+          "img": "https://www.dl.dropboxusercontent.com/s/jk8wdyvyzordri2/promolist-3.jpg?dl=0",
+          "title": "Promolist 3",
+          "redirectTo": "/"
+        },
+        {
+          "id": 9,
+          "img": "https://www.dl.dropboxusercontent.com/s/opnbvo88evwmx42/promolist-4.jpg?dl=0",
+          "title": "Promolist 4",
+          "redirectTo": "/"
+        },
+        {
+          "id": 10,
+          "img": "https://www.dl.dropboxusercontent.com/s/8pbe9yyk598kri0/promolist-5.jpg?dl=0",
+          "title": "Promolist 5",
+          "redirectTo": "/"
+        },
+        {
+          "id": 11,
+          "img": "https://www.dl.dropboxusercontent.com/s/28erpcxi5ragbeg/promolist-1.jpg?dl=0",
+          "title": "Promolist 1",
+          "redirectTo": "/"
+        },
+        {
+          "id": 12,
+          "img": "https://www.dl.dropboxusercontent.com/s/y1feyazv0m5ds4v/promolist-2.jpg?dl=0",
+          "title": "Promolist 2",
+          "redirectTo": "/"
+        },
+        {
+          "id": 13,
+          "img": "https://www.dl.dropboxusercontent.com/s/jk8wdyvyzordri2/promolist-3.jpg?dl=0",
+          "title": "Promolist 3",
+          "redirectTo": "/"
+        },
+        {
+          "id": 14,
+          "img": "https://www.dl.dropboxusercontent.com/s/opnbvo88evwmx42/promolist-4.jpg?dl=0",
+          "title": "Promolist 4",
+          "redirectTo": "/"
+        },
+        {
+          "id": 15,
+          "img": "https://www.dl.dropboxusercontent.com/s/8pbe9yyk598kri0/promolist-5.jpg?dl=0",
+          "title": "Promolist 5",
+          "redirectTo": "/"
+        }
+      ]
+    },
+    "recommendation": {
+      "tilte": {
+        "text": "Top",
+        "coloredText": " Recommendation"
+      },
+      "data": [
+        {
+          "id": "1",
+          "img": "https://www.dl.dropboxusercontent.com/s/y1feyazv0m5ds4v/promolist-2.jpg?dl=0",
+          "tilte": "Sweet Boxes",
+          "desc": "The above is a bhaji sweet box",
+          "btn": {
+            "title": "View Details",
+            "redirectTo": "/"
+          },
+          "price": "₹1599"
+        }
+      ]
+    },
+    "newsLetter": {
+      "title": "Sugar, spice, and all the things nice.",
+      "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam nobis placeat, fuga dolorum ipsa, deleniti sapiente magnam reiciendis vel ab tempora, dolore molestias excepturi odit aperiam.",
+      "bgImage": "https://images.pexels.com/photos/6346115/pexels-photo-6346115.jpeg",
+      "btn": {
+        "title": "Get In Touch",
+        "redirectTo": "/"
+      }
+    }
+  }
+}

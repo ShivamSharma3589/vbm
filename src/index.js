@@ -12,4 +12,8 @@ root.render(
   </React.StrictMode>
 );
 
-reportWebVitals();
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register();
+}
+
+reportWebVitals(); 
